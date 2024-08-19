@@ -5,8 +5,8 @@ words = ["hangman", "programming", "openai", "developer", "code", "algorithm", "
     "Diamond", "Oxygen", "Library", "Picture", "Computer",
     "Elephant", "Mountain", "Sandbox", "Rainbow", "Adventure",
     "Treasure", "Keyboard", "Guitar", "Cyclone", "Mystery",
-    "Galaxy", "Volcano", "Jigsaw", "Galaxy", "Cryptic", "Astronaut", "Butterfly", "Courage", "Dolphin", "Eclipse",
-    "Forest", "Horizon", "Island", "Journey", "Whisper"]
+    "Galaxy", "Volcano", "Jigsaw", "Cryptic", "Astronaut", "Butterfly", "Courage", "Dolphin", "Eclipse",
+    "Forest", "Horizon", "Island", "Journey", "Whisper", "Samsung", "automation", "Calculator", "iphone", "Windows", "Science", "Elements", "Physics", "Chemistry", "Biology", "Mathematics", "Organism", "Google", "Engine", "Search"]
 
 def choose_word(words):
     return random.choice(words).lower()
@@ -23,7 +23,7 @@ def hangman():
     print("Welcome to Hangman!")
     print("Guess the word,")
     print("one letter at a time!")
-    print("You have 20 tries!")
+    print("You have "+str(max_incorrect_guesses)+" tries!")
     
     while True:
         print(display_word(word, guessed_letters))
